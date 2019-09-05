@@ -19,7 +19,7 @@ function add () {
   let b = '21'
 
   // TODO: Write your code here.
-
+  b = Number.parseInt(b)
   return a + b
 }
 
