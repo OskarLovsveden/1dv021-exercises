@@ -49,6 +49,7 @@ function round (number) {
  */
 function getStringLength (str) {
   // TODO: Write your code here.
+  return str.length
 }
 
 /**
