@@ -71,6 +71,7 @@ function getFirstLetter (str) {
  */
 function getIndexOfQuestionMark (str) {
   // TODO: Write your code here.
+  return str.indexOf('?')
 }
 
 /**
