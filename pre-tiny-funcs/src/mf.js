@@ -60,6 +60,7 @@ function getStringLength (str) {
  */
 function getFirstLetter (str) {
   // TODO: Write your code here.
+  return str.charAt(0)
 }
 
 /**
