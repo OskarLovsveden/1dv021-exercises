@@ -27,6 +27,7 @@ function roundUp (number) {
  */
 function roundDown (number) {
   // TODO: Write your code here.
+  return Math.floor(number)
 }
 
 /**
