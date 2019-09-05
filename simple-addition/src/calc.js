@@ -18,6 +18,8 @@ function addNumbers () {
   let secondNumber = 30
 
   // TODO: Write your code here.
+  // Returns the sum of vaiables firstNumber and secondNumber
+  return firstNumber + secondNumber
 }
 
 exports.addNumbers = addNumbers
