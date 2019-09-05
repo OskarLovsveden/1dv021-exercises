@@ -38,6 +38,7 @@ function roundDown (number) {
  */
 function round (number) {
   // TODO: Write your code here.
+  return Math.round(number)
 }
 
 /**
