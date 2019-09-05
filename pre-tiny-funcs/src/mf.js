@@ -17,8 +17,8 @@
  */
 function roundUp (number) {
   // TODO: Write your code here.
+  return Math.ceil(number)
 }
-
 /**
  * Returns the value of a number rounded downward to its nearest integer.
  *
