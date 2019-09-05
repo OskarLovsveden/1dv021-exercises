@@ -83,6 +83,10 @@ function getIndexOfQuestionMark (str) {
  */
 function isEqual (str1, str2) {
   // TODO: Write your code here.
+  if (str1 === str2) {
+    return true
+  }
+  return false
 }
 
 /**
