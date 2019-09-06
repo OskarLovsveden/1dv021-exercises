@@ -34,6 +34,7 @@ function concat () {
   let weeks = 'weeks.'
 
   // TODO: Write your code here.
+  // Simple Concatenation
   return message + ' ' + time + ' ' + weeks
 }
 
@@ -47,6 +48,8 @@ function round () {
   let secondNumber = 29.27
 
   // TODO: Write your code here.
+  // Adding up firstNumber and secondNumber and rounding it to its nearest integer.
+  return Math.round(firstNumber + secondNumber)
 }
 
 /**
