@@ -60,6 +60,16 @@ function round () {
  */
 function getOddNumbers (max) {
   // TODO: Write your code here.
+  let result = ''
+
+  for (var i = 1; i <= max; i += 2) {
+    // If there is a number, add a comma.
+    if (result.length > 0) {
+      result += ', '
+    }
+    // add number.
+    result += i
+  } return result
 }
 
 /**
