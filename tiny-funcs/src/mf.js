@@ -109,6 +109,7 @@ function greetings () {
  */
 function replaceHyphensFor (str) {
   // TODO: Write your code here.
+  // Search and replace all '-' for ' ' globally.
   let noDash = str.replace(/-/g, ' ')
   return noDash
 }
@@ -121,6 +122,19 @@ function replaceHyphensFor (str) {
  */
 function replaceHyphensWhile (str) {
   // TODO: Write your code here.
+  let result = ''
+  let i = 0
+
+  while (i < str.length) {
+    let char = str.charAt(i)
+    if (char === '-') {
+      result += ' '
+    } else {
+      result += char
+    }
+    i++
+  }
+  return result
 }
 
 /**
