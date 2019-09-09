@@ -16,6 +16,16 @@
  */
 function createRightTriangle (base) {
   // TODO: Write your code here.
+  // Sets triangle to a string.
+  let triangle = ''
+
+  /* Sets row to a string with '#'. If row has fewer symbols than the number of base add that amount of '#'
+  to triangle, with an ending '\n' to break for a new line. Ends by adding 1 more '#' to row. */
+  for (let row = '#'; row.length <= base; row += '#') {
+    triangle = triangle + row + '\n'
+  }
+  // Returns triangle as value to createRightTriangle.
+  return triangle
 }
 
 exports.createRightTriangle = createRightTriangle
