@@ -86,6 +86,19 @@ function greetings () {
   let hour = new Date().getHours()
 
   // TODO: Write your code here.
+  // Checks if time is between 8-12
+  if (hour >= 8 && hour < 12) {
+    return 'Good morning!'
+  // Checks if time is between 12-18
+  } else if (hour >= 12 && hour < 18) {
+    return 'Good afternoon!'
+  // Checks if time is between 18-24
+  } else if (hour >= 18 && hour < 24) {
+    return 'Good evening!'
+  // Checks if time is between anything else not specified above
+  } else {
+    return 'Good night!'
+  }
 }
 
 /**
