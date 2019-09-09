@@ -109,6 +109,8 @@ function greetings () {
  */
 function replaceHyphensFor (str) {
   // TODO: Write your code here.
+  let noDash = str.replace(/-/g, ' ')
+  return noDash
 }
 
 /**
