@@ -125,15 +125,21 @@ function replaceHyphensWhile (str) {
   let result = ''
   let i = 0
 
+  // while loop runs while we havent processed all letters in str.
   while (i < str.length) {
+    // new var = position of letter in str, based of i.
     let char = str.charAt(i)
+    // if letter found = '-', add ' ' to result...
     if (char === '-') {
       result += ' '
+      // ...else just add char to result.
     } else {
       result += char
     }
+    // continue to next letter, by adding 1 to i.
     i++
   }
+  // return the new string in result.
   return result
 }
 
@@ -144,6 +150,30 @@ function replaceHyphensWhile (str) {
  */
 function getNumberSequence () {
   // TODO: Write your code here.
+
+  let PAIR_MAX_VALUE = 5
+  let NUMBER_MAX_VALUE = 3
+
+  let result = ''
+
+  // As long as PAIR_MAX_VALUE isnt maxed...
+  for (let pair = 1; pair <= PAIR_MAX_VALUE; pair++) {
+    // and as long as NUMBER _MAX_VALUE...()
+    for (let number = 1; number <= NUMBER_MAX_VALUE; number++) {
+      // add the corresponding value in order pair > number to result.
+      result += pair.toString() + number.toString()
+      // Add '-' between numbers.
+      if (number !== NUMBER_MAX_VALUE) {
+        result += '-'
+      }
+    }
+    // Add ', ' after a number pair is complete.
+    if (pair !== PAIR_MAX_VALUE) {
+      result += ', '
+    }
+  }
+  // Return the resulting string.
+  return result
 }
 
 exports.add = add
