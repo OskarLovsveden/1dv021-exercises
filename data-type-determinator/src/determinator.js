@@ -19,7 +19,7 @@ function tellType (data) {
   let result = 'You sent me '
 
   // TODO: Write your code here.
-
+  
   return result
 }
 
