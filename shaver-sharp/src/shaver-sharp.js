@@ -16,7 +16,28 @@
  * @returns {string} Returns a starting tag as a string.
  */
 function createBeginTag (tagName) {
-  // TODO: Write this code first
+  const selfClosingTags = [
+    'area',
+    'base',
+    'br',
+    'col',
+    'embed',
+    'hr',
+    'img',
+    'input',
+    'link',
+    'meta',
+    'param',
+    'source',
+    'track',
+    'wbr'
+  ]
+
+  if (selfClosingTags.includes(tagName)) {
+    return '<' + tagName + ' />'
+  } else {
+    return '<' + tagName + '>'
+  }
 }
 
 /**
@@ -26,7 +47,7 @@ function createBeginTag (tagName) {
  * @returns {string} Returns a closing tag as a string.
  */
 function createEndTag (tagName) {
-  // TODO: Write this code second
+  return '</' + tagName + '>'
 }
 
 /**
@@ -37,7 +58,11 @@ function createEndTag (tagName) {
  * @returns {string} Returns an element as a string.
  */
 function createElement (tagName, innerHTML = '') {
-  // TODO: Write this code third
+  if (innerHTML.length === 0) {
+    return createBeginTag(tagName)
+  } else {
+    return createBeginTag(tagName) + innerHTML + createEndTag(tagName)
+  }
 }
 
 /**
