@@ -11,7 +11,6 @@
 const determinator = require('./src/determinator')
 
 console.log(determinator.tellType('Hasta la vista, baby.'))
-// TODO: Write your code here.
 console.log(determinator.tellType(true))
 console.log(determinator.tellType(42))
 console.log(determinator.tellType({}))
