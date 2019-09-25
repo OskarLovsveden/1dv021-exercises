@@ -73,7 +73,13 @@ function createElement (tagName, innerHTML = '') {
  * @returns {string} Returns specified elements as a string.
  */
 function createElements (elementData) {
-  // TODO: Write this code last
+  let result = ''
+
+  elementData.forEach(current => {
+    result += createElement(current.tagName, current.innerHTML)
+  })
+
+  return result
 }
 
 // Exports
