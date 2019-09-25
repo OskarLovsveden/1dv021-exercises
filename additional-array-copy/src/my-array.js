@@ -18,7 +18,10 @@
  * @returns {Array} A copy of the source array with an additional number.
  */
 function immutablePushNumber (source, number) {
-  // TODO: Write your code here.
+  console.log(source)
+  const copy = source.slice()
+  copy.push(number)
+  console.log(source)
+  return copy
 }
-
 exports.immutablePushNumber = immutablePushNumber
