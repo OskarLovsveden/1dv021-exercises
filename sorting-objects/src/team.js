@@ -17,12 +17,11 @@
    */
 function sortByPoints (teams) {
   if (!Array.isArray(teams)) {
-    throw new TypeError('The source parameter must be an Array.')
+    throw new TypeError('The argument passed must be an array.')
   }
 
-  const copy = teams.splice(0)
-  copy.sort((a, b) => a.points - b.points).reverse()
+  const copy = teams.slice(0).sort((a, b) => b.points - a.points)
   return copy
 }
 
-module.exports.sortByPoints = sortByPoints
+exports.sortByPoints = sortByPoints
