@@ -16,7 +16,13 @@
    * @returns {Object[]} An ordered array of team objects.
    */
 function sortByPoints (teams) {
-  // TODO: Write your code here!
+  if (!Array.isArray(teams)) {
+    throw new TypeError('The source parameter must be an Array.')
+  }
+
+  const copy = teams.splice(0)
+  copy.sort((a, b) => a.points - b.points).reverse()
+  return copy
 }
 
 module.exports.sortByPoints = sortByPoints
