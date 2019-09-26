@@ -17,7 +17,12 @@
  * @returns {Number[]} A sorted copy of the source array.
  */
 function immutableSort (source) {
-  // TODO: Write your code here.
+  if (!Array.isArray(source)) {
+    throw new TypeError('The source parameter must be an Array.')
+  }
+  const copy = source.slice(0)
+  copy.sort((a, b) => a - b)
+  return copy
 }
 
 /**
@@ -28,7 +33,12 @@ function immutableSort (source) {
  * @returns {Number[]} A sorted copy (descending order) of the source array.
  */
 function immutableSortDescending (source) {
-  // TODO: Write your code here.
+  if (!Array.isArray(source)) {
+    throw new TypeError('The source parameter must be an Array.')
+  }
+  const copy = source.slice(0)
+  copy.sort((a, b) => a - b).reverse()
+  return copy
 }
 
 exports.immutableSort = immutableSort
