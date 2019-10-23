@@ -1,5 +1,5 @@
 /**
- * @module Ellipse
+ * @module src/Ellipse
  * This module contains the Ellipse
  *
  * @author Oskar Lövsveden
@@ -14,6 +14,13 @@
  * @class Ellipse
  */
 class Ellipse {
+  /**
+   * Creates a JavaScript Ellipse instance that represents an ellipse.
+   *
+   * @param {number} a - The ellipse's major-axis radius.
+   * @param {number} b - The ellipse's minor-axis radius.
+   * @constructor
+   */
   constructor (a, b) {
     /**
      * Represents the major axis of the ellipse
